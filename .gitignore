@@ -1,0 +1,15 @@
+# Ignore JDK
+Oracle_JDK-23/
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
