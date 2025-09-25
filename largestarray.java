@@ -6,7 +6,7 @@ public class largestarray {
         return arr[arr.length-1];
 }
 public static void main(String[] args) {
-    int[] arr = {10, 324, 444, 90, 9808};
+    int[] arr = {10, 324, 444, 60, 9808};
     System.out.println(largest(arr));
 }
 }

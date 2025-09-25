@@ -9,7 +9,7 @@ public class KthLargest_Heap {
         }
         return minHeap.peek();
     }
-
+      
     public static void main(String[] args) {
         KthLargest_Heap solver = new KthLargest_Heap();
         System.out.println(solver.findKthLargest(new int[]{3,2,1,5,6,4}, 2)); // 5
