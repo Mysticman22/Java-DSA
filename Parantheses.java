@@ -9,9 +9,9 @@ class Parentheses {
         for (char c : s.toCharArray()) {
             // If it's an opening bracket, push it onto the stack.
             if (c == '(' || c == '{' || c == '[') {
-                stack.push(c);
+                stack.push(c); 
             }
-            // If it's a closing bracket...
+            // If it's a closing bracket... 
             else {
                 // ...and the stack is empty, it's an invalid string.
                 if (stack.isEmpty()) {
