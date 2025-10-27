@@ -23,8 +23,7 @@ public class ProductExceptSelf {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         ProductExceptSelf solver = new ProductExceptSelf();
         int[] nums = {1,2,3,4};
         System.out.println(Arrays.toString(solver.productExceptSelf(nums))); // [24,12,8,6]
