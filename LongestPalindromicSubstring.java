@@ -1,15 +1,14 @@
-class LongestPalindromicSubstring {
-    public String longestPalindrome(String s) {
+public class LongestPalindromicSubstring {
+
+    public static String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
 
-        int start = 0, end  = 0;
+        int start = 0, end = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            // odd length palindrome
-            int len1 = expandFromCenter(s, i, i);
 
-            // Even length palinfrome
-            int len2 = expandFromCenter(s, i, i + 1);
+            int len1 = expandFromCenter(s, i, i);     // odd length
+            int len2 = expandFromCenter(s, i, i + 1); // even length
 
             int len = Math.max(len1, len2);
 
@@ -18,14 +17,23 @@ class LongestPalindromicSubstring {
                 end = i + len / 2;
             }
         }
+
         return s.substring(start, end + 1);
     }
 
-    private int expandFromCenter(String s, int left, int right) {
-        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+    private static int expandFromCenter(String s, int left, int right) {
+        while (left >= 0 && right < s.length()
+                && s.charAt(left) == s.charAt(right)) {
             left--;
             right++;
         }
         return right - left - 1;
+    }
+
+    // 🔑 ENTRY POINT
+    public static void main(String[] args) {
+        String s = "babad";
+        System.out.println("Input: " + s);
+        System.out.println("Longest Palindromic Substring: " + longestPalindrome(s));
     }
 }
