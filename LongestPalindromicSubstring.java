@@ -30,7 +30,7 @@ public class LongestPalindromicSubstring {
         return right - left - 1;
     }
 
-    // 🔑 ENTRY POINT
+    //  ENTRY POINT
     public static void main(String[] args) {
         String s = "babad";
         System.out.println("Input: " + s);
