@@ -7,3 +7,5 @@ public class MoveZeros {
         System.out.println(Arrays.toString(a));
     }
 }
+// Output: [1, 7, 12, 0, 0]
+// The code moves all zeros in the array to the end while maintaining the order of non-zero
