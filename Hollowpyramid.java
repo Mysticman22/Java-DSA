@@ -15,6 +15,6 @@ public class Hollowpyramid {
             }
             System.out.println();
         }
-    }
+    }  
 }
  
