@@ -3,7 +3,7 @@ class Account {
     public int getBalance() {
         return balance;
     }
-}
+}  
 public class EncapsulationDemo {
     public static void main(String[] args) {
         Account a = new Account();
