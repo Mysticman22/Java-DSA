@@ -11,7 +11,7 @@ public class MoveZerosToFirst {
 
         // Step 1: Place zeroes first
         for (int x : a) {
-            if (x == 0) {
+            if (x == 0)  {
                 result[index++] = 0;
             }
         }
