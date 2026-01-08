@@ -9,7 +9,7 @@ public class RemoveDuplicatesFromSortedList {
         }
     }
 
-    public static ListNode deleteDuplicates(ListNode head) {
+    public static ListNode deleteDuplicates (ListNode head) {
         ListNode current = head;
 
         while (current != null && current.next != null) {
